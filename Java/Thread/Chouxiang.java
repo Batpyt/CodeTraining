@@ -8,6 +8,7 @@ public abstract class Chouxiang {
 		char b = 'b';
 		char c = 'c';
 		System.out.println(a - c);
+		System.out.println(Thread.currentThread().getName());
 	}
 
 	public static int n(int i) {
