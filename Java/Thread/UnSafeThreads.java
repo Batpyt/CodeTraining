@@ -5,10 +5,13 @@ public class UnSafeThreads {
     public static class Mythread extends Thread{
         @Override
         public void run() {
-            synchronized (this){
-                for (int j = 0; j < 1000; j++) {
-                    i++;
-                }
+//            synchronized (this){
+//                for (int j = 0; j < 1000; j++) {
+//                    i++;
+//                }
+//            }
+            for (int j = 0; j < 1000; j++) {
+                i++;
             }
         }
     }
